@@ -2,7 +2,7 @@
     display: grid;
     grid-gap: 0px;
     grid-template-rows: 1fr 0.75fr 0.25fr;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     font-size: 16px;
     
     
@@ -18,7 +18,8 @@ header {
     display: grid;        
     padding: 5px;
     color: white;
-    font-family: Montserrat;    
+    font-family: Montserrat;
+    align-items: center;    
     grid-row: 1/2;
     line-height: 0.8;
     grid-template-areas: 
@@ -30,7 +31,7 @@ header {
     display: grid;    
     grid-template-areas:    
     "search-button search-field destination-link sign-in-button";
-    grid-template-rows: 1;
+    grid-template-rows: 1fr;
     grid-template-columns: 0.6fr 1fr 0.25fr 0.2fr;
 }
 
@@ -39,11 +40,50 @@ header {
     display: grid;
     grid-template-areas: 
     "intro-text intro-text intro-text intro-text intro-text"
-    "destination from to guests submit";
-    grid-template-rows: 0.6fr 0.4fr;
-    grid-template-columns: 1fr 1fr 1fr 0.5fr 0.25fr;
+    "destination-form destination-form destination-form destination-form destination-form destination-form destination-form";
+    
 }
 
+.destination-form {
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr 0.5fr 0.25fr;
+}
+#intro-text {
+    grid-area: 1/1/1/-1;
+}
+#destination {
+    grid-area: 2/1/2/2;
+    width: 95%
+}
+#from {
+    grid-area: 2/2/2/3;
+    width: 95%
+}
+#to {
+    grid-area: 2/3/2/4;
+    width: 95%
+}
+#guests {
+    grid-area: 2/4/2/5;
+    width: 95%
+}
+#submit {
+    grid-area: 2/5/2/5;
+    width: 95%;
+    background-color: #fcba03;
+    border-radius: 12px;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+button:hover {background-color: #f2b200}
+
+button:active {
+  background-color: #f2b200;
+  transform: translateX(4px);
+}
 
 
 section {
