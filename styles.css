@@ -19,7 +19,8 @@ header {
     padding: 5px;
     color: white;
     font-family: Montserrat;
-    align-items: center;    
+    align-items: center;
+    justify-items: center;    
     grid-row: 1/2;
     line-height: 0.8;
     grid-template-areas: 
@@ -32,7 +33,15 @@ header {
     grid-template-areas:    
     "search-button search-field destination-link sign-in-button";
     grid-template-rows: 1fr;
-    grid-template-columns: 0.6fr 1fr 0.25fr 0.2fr;
+    grid-template-columns: 250px 1fr 0.25fr 0.4fr;
+}
+
+#destination-link {
+    justify-self: end;
+    align-self: top;
+}
+#sign-in-button {
+    height: 23px;
 }
 
 
