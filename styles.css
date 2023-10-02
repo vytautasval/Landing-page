@@ -1,43 +1,48 @@
 .grid-container {
     display: grid;
-    grid-gap: 5px;
-    grid-template-rows: 1fr 1fr 0.25fr;
-    grid-template-columns: 1fr 1fr 1fr 0.5fr 0.25fr;
+    grid-gap: 0px;
+    grid-template-rows: 1fr 0.75fr 0.25fr;
+    grid-template-columns: 1;
     font-size: 16px;
+    
 }
+
+
 
 header {
     background: url(images/header.jpg);
-    display: grid;
-    grid-template-rows: 20% 50% 30%; 
-    grid-template-columns: 1fr 1fr 1fr 0.5fr 0.25fr;
-    padding: 10px;
-    border: 2px solid yellow;
+    background-size: cover;
+    background-position: center center;
+    /*justify-items: center;*/
+    display: grid;        
+    padding: 5px;    
     grid-row: 1/2;
-    font-size: 1em;
+    line-height: 0.8;
+    grid-template-areas: 
+    "search-bar search-bar search-bar destination-link sign-in-button"
+    "....."
+    "destination-form destination-form destination-form destination-form destination-form"
+}
+.search-bar {
+    display: grid;
+    /*grid-template-areas:    
+    "search-button search-field destination-link sign-in-button"*/
+    grid-template-rows: 1;
+    grid-template-columns: 0.1fr 1fr 0.25fr 0.2fr;
 }
 
-.search-bar {
-    grid-area: 1/1/1/-1;
-} 
-.destination-form {
-    grid-area: 3/1/3/-1;
-}
-form:first-of-type {
-    grid-area: 1/1/1/3;
-}
 #search-button {
     background-image: url(icons/search-white.svg);
-    grid-area: 1/1/1/2;
+    grid-area: 1/1/1/1;
 }
 #search-field {
-    grid-area: 1/2/1/4;
+    grid-area: 1/2/1/3;
 }
 #destination-link {
-    grid-area: 1/4/1/4;
+    grid-area: 1/3/1/4;
 }
 #sign-in-button {
-    grid-area: 1/5/1/5;
+    grid-area: 1/4/1/5;
 }
 section {
     padding: 10px;
