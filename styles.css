@@ -36,16 +36,17 @@ header {
     grid-template-areas:    
     "search-button search-field destination-link sign-in-button";
     grid-template-rows: 1fr;
-    grid-template-columns: 250px 1fr 0.25fr 0.4fr;
+    grid-template-columns: 250px 1fr 0.25fr 1frfr;    
+    
 }
 
-#search-button {
+
+#search-form #search-button {
     background-color: transparent;
-    border: none;
-    background-image: url(icons/search-white.svg);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center center;
+    border: none;    
+    border-radius: 100px;
+    cursor: pointer;
+    
 }
 #search-field {
     background-color: transparent;
@@ -53,7 +54,7 @@ header {
     background-image: url(icons/globe-white.svg);
     background-size: 10%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right; 
     }
 ::placeholder {
     color: white;
@@ -61,10 +62,23 @@ header {
 }
 #destination-link {
     justify-self: end;
-    align-self: top;
+    align-self: center;
+    color: white;
+    padding: 7px;
 }
 #sign-in-button {
     height: 23px;
+    align-self: center;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#sign-in-button:hover {background-color: #e3e1e1}
+
+#sign-in-button:active {
+  background-color: #e3e1e1;
+  transform: translateX(4px);
 }
 
 
@@ -114,9 +128,9 @@ header {
 
     
 }
-button:hover {background-color: #f2b200}
+#submit:hover {background-color: #f2b200}
 
-button:active {
+#submit:active {
   background-color: #f2b200;
   transform: translateX(4px);
 }
