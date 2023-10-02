@@ -8,16 +8,40 @@
 
     <body class="grid-container">
         <header>
-            <div>
+            <div class="search-bar">
                 <form>
-                    <button type="submit">Search</button>
+                    <button id="search-button" type="submit">Search</button>
                     <input type="text" placeholder="Search">
-                </form>                
+                </form>
+                <a href="wikipedia.com">Destination</a>              
                 <button type="button">Sign in</button>
-        </div>
-            <div>Year long travel</div>
-            <h1>Book your next <br>destination</h1>
-            <!--Booking form-->
+            </div>
+            <div class="destination-form">
+                <div>Year long travel</div>
+                <h1>Book your next <br>destination</h1>
+                <form>
+                    <div id="destination">
+                        <label for name="destination">Destination</label><br>
+                        <select name="destination" id="destination">
+                            <option value="Vilnius">Vilnius</option>
+                            <option value="Kaunas">Kaunas</option>
+                        </select>
+                    </div>
+                    <div id="from">
+                        <label for name="from">From</label><br>
+                        <input type="date" name="from" id="from">
+                    </div>
+                    <div id="to">
+                        <label for name="to">To</label><br>
+                        <input type="date" name="to" id="to">
+                    </div>
+                    <div id="guests">
+                        <label for name="guests">Guests</label><br>
+                        <input type="number" name="guests" id="guests">
+                    </div>
+                    <button id="submit" type="submit">-></button>
+                </form>
+            </div>
         </header>
         <section>
             <h2>Destinations</h2>
