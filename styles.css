@@ -1,0 +1,33 @@
+.grid-container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 1fr 1fr 0.25fr;
+    grid-template-columns: 1;
+    font-size: 16px;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 70% 30%; 
+    padding: 10px;
+    border: 2px solid yellow;
+    grid-row: 1/2;
+    font-size: 1em;
+}
+#search-button {
+    background-image: url(icons/search-white.svg)
+    
+}
+section {
+    padding: 10px;
+    border: 2px solid green;
+    grid-row: 2/3;
+    
+}
+footer {
+    padding: 10px;
+    border: 2px solid red;
+    grid-row: 3/4;
+    
+    
+}
