@@ -88,15 +88,7 @@ header h1 {
 .description {
     font-family: "Montserrat";
 }
-footer {
-    background-color: #ffc107;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  footer nav a {
-    display: block;
-    color: black;
-  }
+
 #logo {
     display: flex;
     justify-content: center;
@@ -107,6 +99,7 @@ footer {
 }
 #menu nav a {
     line-height: 40px;
+    color: white;
 }
 header > .container-md {
     display: flex;
@@ -135,11 +128,7 @@ header > .container-md {
     .destinations img {
         max-height: none;
     }
-    footer > .container-md {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
+    
 }
 @media (max-width: 767px) {
     #menu nav {
