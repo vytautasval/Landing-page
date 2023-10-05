@@ -138,4 +138,9 @@ header > .container-md {
 #search-field {
     background-color: transparent;
     border: none;
+    width: 90%;
+}
+.form-control::placeholder {
+    color: white;
+    opacity: 1;
 }
