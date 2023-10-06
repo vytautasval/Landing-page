@@ -26,7 +26,7 @@ header {
     color: white;    
     height: 100%;  
     padding-bottom: 20px;
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif";
 }
 header > .container-md {
     display: flex;
