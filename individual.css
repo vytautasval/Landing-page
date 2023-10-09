@@ -9,6 +9,13 @@ section {
 #individual-content {
     padding: 20px;
 }
+#individual-content a img{
+    transform: scaleX(-1);
+
+}
+#individual-content a {
+    background-color: #ffc107;
+}
 .description {
     font-family: "Montserrat";
 }
@@ -18,11 +25,22 @@ section {
     object-fit: cover;    
 }
 
+#book {
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+}
+#book form {
+    width: 50%;
+}
+#book form button {
+    width: 100%;    
+}
+
 @media (min-width: 768px) {
     #individual-content .description {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        /*grid-row: 1fr 1fr;*/
+        grid-template-columns: 1fr 1fr 1fr 1fr;       
         gap: 20px;
     }
 }

@@ -29,9 +29,11 @@
 }
 #book form .submit {
     grid-area: submit;
+       
 }
 #book form .submit button {
     width: 100%;
+    background-color: #ffc107;
 }
 .destinations {
     display: grid;
@@ -57,7 +59,12 @@ header {
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+section {
+    padding: 20px;
 }
 header h1 {
     font-size: 64px;
@@ -92,6 +99,7 @@ header h1 {
 #logo {
     display: flex;
     justify-content: center;
+    
 }
 #menu {
     display: flex;
@@ -105,7 +113,7 @@ header > .container-md {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%
+    height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -139,6 +147,7 @@ header > .container-md {
     background-color: transparent;
     border: none;
     width: 90%;
+    color: white;
 }
 .form-control::placeholder {
     color: white;

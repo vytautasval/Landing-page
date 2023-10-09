@@ -4,8 +4,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr; 
     gap: 10px;    
     padding: 20px;
-    /*overflow: scroll;*/
-        
+            
 }
 .destination {
     position: relative;
@@ -38,6 +37,9 @@
     height: 340px;
     object-fit: cover;
        
+}
+.destination {
+    position: relative;
 }
 .destination:hover {
     opacity: 0.8;

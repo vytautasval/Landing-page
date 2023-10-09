@@ -14,33 +14,36 @@
 </head>
 <body>
     <header>
-            <div class="container-md">
-                <div id="topbar"> <!--Search div-->
-                    <form method="get" class="input-group">
-                        <img src="/icons/search-white.svg" alt="Search">                    
-                        <input  id="search-field" class="form-control" type="text" placeholder="Search">
-                    </form>
-                    
-                    <div id="logo">
-                        <img src="/icons/globe-white.svg" alt="Logo">
-                    </div>                
-                    <div id="menu">
-                        <nav class="d-none d-md-block">
-                            <a href="index.html">Home</a>
-                            <a href="destinations_gallery.html">Destinations</a>
-                            <a href="" class="btn btn-light">Sign in</a>
-                        </nav>
-                        <img class="d-md-none" src="/icons/three-bars-white.svg" alt="Menu">
-                    </div>                             
-                    
-                </div>       
-                 
-            </div>         
+        <div class="container-md">
+            <div id="topbar"> <!--Search div-->
+                <form method="get" class="input-group">
+                    <label for="search-field"><img src="/icons/search-white.svg" alt="Search"></label>                 
+                    <input  id="search-field" class="form-control" type="text" placeholder="Search">
+                </form>
+                <div id="logo">
+                    <a href="index.html"><img src="/icons/globe-white.svg" alt="Home Logo"></a>                        
+                </div>                
+                <div id="menu">
+                    <nav class="d-none d-md-block">
+                        <a href="index.html">Home</a>
+                        <a href="destinations_gallery.html">Destinations</a>
+                        <a href="contact_form.html" class="btn btn-light">Contact</a>
+                    </nav>
+                    <img class="d-md-none" src="/icons/three-bars-white.svg" alt="Menu">
+                </div>                             
+                
+            </div>                                                   
+          
+
+           
+        </div>         
             
 
         </header>
     <section id="individual-content">
         <div class="container-md">
+            <a href="destinations_gallery.html" class="btn btn-light"><img src="/icons/arrow-right.svg" alt=""></a>
+            
             <h1>France - Your forever home.</h1>
             <div class="description">
                 <p>If you're a culture lover, the historic cities of London and Edinburgh should be at the top of your list. Walk the streets of London's West End, marvel at the architecture of Big Ben and Buckingham Palace, and take in a show at the Globe Theatre. In Edinburgh, visit the Royal Mile, explore the castle, and sample the local fare at the city's world-famous restaurants. For those seeking a bit of relaxation, head to the spas and
@@ -76,31 +79,29 @@
             <div id="book">             
                 
                 <h2>Book your next trip to France!</h2>                                
-                <form>
-                    <div class="destination-select">                        
-                    </div>
+                <form>                    
                     <div class="from">
-                        <label>From</label>
-                        <input class="form-control" type="date">
+                        <label for="from">From</label>
+                        <input id="from" class="form-control" type="date">
                     </div>
                     <div class="to">
-                        <label>To</label>
-                        <input class="form-control" type="date">
+                        <label for="to">To</label>
+                        <input id="to" class="form-control" type="date">
                     </div>
                     <div class="guests">
-                        <label>Guests</label>
-                        <input class="form-control" type="number" value="2">
+                        <label for="guests">Guests</label>
+                        <input id="guests" class="form-control" type="number" value="2">
                     </div>
                     <div class="submit">
-                        <button class="btn btn-warning" type="submit">
-                            <img src="/icons/arrow-right.svg" alt="arrow">
+                        <button class="btn btn-light" type="submit">
+                            <img src="/icons/arrow-right.svg" alt="">
                         </button>
                     </div>                    
                 </form>
             </div>
         </div>
     </section>
-    <footer>
+    <footer style="height: 100vh;">
         <div class="container-md">
             <div> <!--links div-->
                 <h3>Links</h3>
@@ -119,7 +120,7 @@
                 <input class="form-control" type="email" placeholder="Email">
                 <button class="btn btn-success" type="submit">
                 Subscribe
-                <img src="/icons/arrow-right-white.svg" alt="arrow">
+                <img src="/icons/arrow-right-white.svg" alt="">
                 </button>
             </form>
             </div>
